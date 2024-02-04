@@ -8,7 +8,7 @@ Deploy the best environment for Kali Linux.
 - The use of a new/clean Kali Linux 2023 installation is recommended.
 - Tested on Kali Linux 2023 with VMware, VirtualBox and bare metal.
 
-1. clone repo `git clone https://github.com/thegoodhackertv/hackerpwm.git`
+1. clone repo `git clone https://github.com/theredhammer/hackerpwm.git`
 2. Change directory `cd hackerpwm`
 3. Run script `./hackerpwm.sh`
 4. **Reboot** and switch to bspwm in the login screen.
