@@ -97,6 +97,10 @@ sudo rm -f /opt/nvim-linux64.tar.gz
 cat $RPATH/kitty-installer.sh | sh /dev/stdin
 # ~/.local/kitty.app/bin/kitty
 
+#hacer bin target
+mkdir ~/.config/bin
+echo "10.0.0.0 Test" > ~/.config/bin/target
+
 # batcat
 wget https://github.com/sharkdp/bat/releases/download/v0.24.0/bat_0.24.0_amd64.deb -O /tmp/bat.deb
 sudo dpkg -i /tmp/bat.deb
@@ -140,6 +144,8 @@ cp -rv $RPATH/SCRIPTS/* ~/.config/polybar/forest/scripts/
 sudo ln -s ~/.config/polybar/forest/scripts/target.sh /usr/bin/target
 sudo ln -s ~/.config/polybar/forest/scripts/screenshot.sh /usr/bin/screenshot
 
+cp -rv $RPATH/SCRIPTS/htb_status.sh ~/.config/
+
 # copy wallpapers
 mkdir ~/Wallpapers/
 cp -rv $RPATH/WALLPAPERS/* ~/Wallpapers/
@@ -150,6 +156,7 @@ chmod +x ~/.config/bspwm/scripts/bspwm_resize
 chmod +x ~/.config/polybar/launch.sh
 chmod +x ~/.config/polybar/forest/scripts/target.sh
 chmod +x ~/.config/polybar/forest/scripts/screenshot.sh
+chmod +x ~/.config/htb_status.sh
 
 # Select rofi theme
 #rofi-theme-selector
