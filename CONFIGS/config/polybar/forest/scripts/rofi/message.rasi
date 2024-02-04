@@ -5,12 +5,12 @@
 * {
     background-color:       @bg;
     text-color:             @fg;
-	font:				 	"Iosevka Nerd Font 10";
+	font:				 	"Iosevka Nerd Font 22";
 }
 
 window {
-    width:      			320px;
-    padding:    			25px;
+    width:      			500px;
+    padding:    			50px;
     border:					0px 0px 1px 0px;
     border-radius:          0px;
     border-color:           @se;
